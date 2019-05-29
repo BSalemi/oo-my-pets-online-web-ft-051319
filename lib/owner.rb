@@ -63,6 +63,7 @@ class Owner
         mood = "nervous"
       end
     end.clear
+    binding.pry
   end
 
 end
