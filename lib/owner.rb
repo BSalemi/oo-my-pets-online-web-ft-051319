@@ -62,7 +62,6 @@ class Owner
       pets.collect do |pet|
         mood = "nervous"
       end
-      binding.pry
     end.clear
   end
 
