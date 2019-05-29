@@ -10,6 +10,7 @@ class Owner
     @name = name
     @species = "human"
     @@all << self
+    @pets = {:fishes => [], :dogs => [], :cats => []}
   end
 
   def self.all
@@ -28,9 +29,6 @@ class Owner
     "I am a #{self.species}."
   end
 
-  def pets
-    @pets = {:fishes => [], :dogs => [], :cats => []}
-  end
 
   def buy_fish(name)
     pet_fish = Fish.new(name)
